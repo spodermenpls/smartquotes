@@ -1,0 +1,33 @@
+{
+"manifest_version": 2,
+"name": "Smart Quotes",
+"description": "Typographische Anführungszeichen",
+"version": "0.1",
+"applications": {
+"gecko": {
+"id": "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
+"strict_min_version": "68.0"
+}
+},
+"author": "Marc H.",
+"homepage_url": "http://smartquotes.info/tbSmartQuotes",
+"type": "xul"
+}
+}
+
+ "experiment_apis": {
+    "WindowListener": {
+      "schema": "api/WindowListener/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["WindowListener"]],
+        "script": "api/WindowListener/implementation.js"
+      }
+    }
+  }
+  
+   "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
