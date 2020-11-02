@@ -1,3 +1,3 @@
-Thunderbird 78+ transition for "Smart Quotes 0.1"
+MailExtension port for "Smart Quotes"
 
 https://addons.thunderbird.net/de/thunderbird/addon/smart-quotes/
