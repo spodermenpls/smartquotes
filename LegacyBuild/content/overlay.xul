@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<overlay id="smartquotesOverlay"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="script.js"/>
+
+	<toolbarpalette id="MsgComposeToolbarPalette">
+		<toolbarbutton id="smartQuotesConvert"
+					   image="chrome://smartquotes/content/images/sq.png"
+					   tooltiptext="Convert to Typographic Quotes"
+					   buttonstyle="pictures"
+					   oncommand="doSmartQuotesConvert();"
+		/>
+		<toolbarbutton id="smartQuotesAuto"
+					   image="chrome://smartquotes/content/images/sq1.png"
+					   tooltiptext="Smart Quotes"
+					   buttonstyle="pictures"
+					   oncommand="doSmartQuotesAuto();"
+					   state="1"
+		/>
+	</toolbarpalette>
+
+</overlay>
