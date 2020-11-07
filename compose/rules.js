@@ -1,7 +1,7 @@
 const quoteRules = function(){
 	"use strict";
-	const noWordEndRegExp = /\B$/;
-	const noWordStartRegExp = /^\B/;
+	const noWordEndRegExp = /[\B\s]$/;
+	const noWordStartRegExp = /^[\B\s]/;
 	return {
 		get: function(quoteRule){
 			return this[quoteRule];
@@ -11,10 +11,12 @@ const quoteRules = function(){
 				key: '"',
 				preventDefault: true,
 				action: function(context){
-					if (!context.previous || context.previous.match(noWordEndRegExp)){
+					const previous = context.previous;
+					if (!previous || previous.match(noWordEndRegExp)){
 						return "\u201C";
 					}
-					else if (!context.next || context.next.match(noWordStartRegExp)){
+					const next = context.next;
+					if (!next || next.match(noWordStartRegExp)){
 						return "\u201D";
 					}
 				}
@@ -23,10 +25,12 @@ const quoteRules = function(){
 				key: "'",
 				preventDefault: true,
 				action: function(context){
-					if (!context.previous || context.previous.match(noWordEndRegExp)){
+					const previous = context.previous;
+					if (!previous || previous.match(noWordEndRegExp)){
 						return "\u2018";
 					}
-					else if (!context.next || context.next.match(noWordStartRegExp)){
+					const next = context.next;
+					if (!next || next.match(noWordStartRegExp)){
 						return "\u2019";
 					}
 				}
@@ -42,7 +46,7 @@ const quoteRules = function(){
 						return "\u201E";
 					}
 					const next = context.next;
-					if (!next || next.match(noWordEndRegExp)){
+					if (!next || next.match(noWordStartRegExp)){
 						return "\u201C";
 					}
 				}

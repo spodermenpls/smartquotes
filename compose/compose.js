@@ -84,10 +84,10 @@ async function main(){
 			let inserted = key;
 			quoteRule.filter(rule => key === rule.key).forEach(function(rule){
 				const action = rule.action(context);
-				if (rule.preventDefault){
-					inserted = "";
-				}
 				if (action){
+					if (rule.preventDefault){
+						inserted = "";
+					}
 					document.execCommand("insertText", false, action);
 					inserted += action;
 				}
