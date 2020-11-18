@@ -38,6 +38,6 @@
 		"default_icon": "images/icon.svg"
 	},
 	"permissions": ["compose", "storage"],
-	"author": "Marc H.",
-	"homepage_url": "http://smartquotes.info/tbSmartQuotes"
+	"author": "The Smart Quotes Team",
+	"homepage_url": "https://github.com/spodermenpls/smartquotes"
 }
