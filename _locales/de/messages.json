@@ -1,0 +1,34 @@
+{
+	"quoteRule": {
+		"message": "de",
+		"description": "the quoting rule to use"
+	},
+	"addonDescription": {
+		"message": "Typographische Anführungszeichen",
+		"description": "Description of the addon"
+	},
+	"applyToSelection": {
+		"message": "Auf Auswahl anwenden",
+		"description": "Used in the popup for the description of the \"apply to selection\" button"
+	},
+	"smartQuoteActive": {
+		"message": "SmartQuote aktiv",
+		"description": "Used in the popup for the description of the \"SmartQuote active\" checkbox"
+	},
+	"usedQuoteRule": {
+		"message": "Benutzte Anführungsstrichregel",
+		"description": "Used in the popup for the description of the quote rule select"
+	},
+	"quoteRuleEN": {
+		"message": "Englisch",
+		"description": "Name of the English quote rule"
+	},
+	"quoteRuleDE": {
+		"message": "Deutsch",
+		"description": "Name of the German quote rule"
+	},
+	"sampleMessage": {
+		"message": "",
+		"description": ""
+	}
+}

@@ -1,0 +1,15 @@
+body {
+	--background-color: rgb(249, 250, 249);
+	--text-color: rgb(60, 62, 60);
+}
+@media (prefers-color-scheme: dark){
+	body {
+		--background-color: rgb(74, 74, 79);
+		--text-color: rgb(249, 249, 250);
+	}
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
