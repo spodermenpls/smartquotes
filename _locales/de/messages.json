@@ -1,10 +1,10 @@
 {
 	"quoteRule": {
 		"message": "de",
-		"description": "the quoting rule to use"
+		"description": "The quoting rule to use"
 	},
 	"addonDescription": {
-		"message": "Typographische Anführungszeichen",
+		"message": "Eingabe-Konverter für internationale Zitatzeichen",
 		"description": "Description of the addon"
 	},
 	"applyToSelection": {
@@ -12,8 +12,8 @@
 		"description": "Used in the popup for the description of the \"apply to selection\" button"
 	},
 	"smartQuoteActive": {
-		"message": "SmartQuote aktiv",
-		"description": "Used in the popup for the description of the \"SmartQuote active\" checkbox"
+		"message": "Smart Quote aktiv",
+		"description": "Used in the popup for the description of the \"Smart Quote active\" checkbox"
 	},
 	"usedQuoteRule": {
 		"message": "Benutzte Anführungsstrichregel",
