@@ -1,0 +1,34 @@
+{
+	"quoteRule": {
+		"message": "en",
+		"description": "the quoting rule to use"
+	},
+	"addonDescription": {
+		"message": "Typing converter for international quotation marks",
+		"description": "Description of the addon"
+	},
+	"applyToSelection": {
+		"message": "Apply to selection",
+		"description": "Used in the popup for the description of the \"apply to selection\" button"
+	},
+	"smartQuoteActive": {
+		"message": "Smart Quote active",
+		"description": "Used in the popup for the description of the \"Smart Quote active\" checkbox"
+	},
+	"usedQuoteRule": {
+		"message": "Used citation rule",
+		"description": "Used in the popup for the description of the quote rule select"
+	},
+	"quoteRuleEN": {
+		"message": "English",
+		"description": "Name of the English quote rule"
+	},
+	"quoteRuleDE": {
+		"message": "German",
+		"description": "Name of the German quote rule"
+	},
+	"sampleMessage": {
+		"message": "",
+		"description": ""
+	}
+}
