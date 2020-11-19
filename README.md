@@ -1,4 +1,4 @@
-Smart Quotes [![Crowdin](https://badges.crowdin.net/smart-quotes/localized.svg)](https://crowdin.com)
+Smart Quotes [![Crowdin](https://badges.crowdin.net/smart-quotes/localized.svg)](https://crowdin.com/project/smart-quotes)
 =====
 
 MailExtension port for legacy extension "Smart Quotes 0.1":<br />
