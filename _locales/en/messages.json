@@ -4,7 +4,7 @@
 		"description": "the quoting rule to use"
 	},
 	"addonDescription": {
-		"message": "SmartQuotes for Thunderbird",
+		"message": "Typing converter for international quotation marks",
 		"description": "Description of the addon"
 	},
 	"applyToSelection": {
@@ -12,11 +12,11 @@
 		"description": "Used in the popup for the description of the \"apply to selection\" button"
 	},
 	"smartQuoteActive": {
-		"message": "SmartQuote active",
-		"description": "Used in the popup for the description of the \"SmartQuote active\" checkbox"
+		"message": "Smart Quote active",
+		"description": "Used in the popup for the description of the \"Smart Quote active\" checkbox"
 	},
 	"usedQuoteRule": {
-		"message": "Used quote-rule",
+		"message": "Used citation rule",
 		"description": "Used in the popup for the description of the quote rule select"
 	},
 	"quoteRuleEN": {
