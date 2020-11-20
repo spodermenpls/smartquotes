@@ -55,7 +55,14 @@ const quoteRules = function(){
 				key: "'",
 				preventDefault: true,
 				action: function(context){
-					return "\u2019";
+					const previous = context.previous;
+					if (!previous || (previous.match(noWordEndRegExp) && !previous.match(/\u201A[^\u2018]*$/))){
+						return "\u201A";
+					}
+					const next = context.next;
+					if (!next || next.match(noWordStartRegExp)){
+						return "\u2018";
+					}
 				}
 			},
 		]
