@@ -71,6 +71,44 @@ const quoteRules = function(){
 					}
 				}
 			},
+		],
+		fr: [
+			{
+				key: ">",
+				preventDefault: true,
+				backtracking: 2,
+				action: function(context){
+					const previous = context.previous;
+					if (previous && (previous.endsWith("\u203A") || previous.endsWith(">"))){
+						return "\u00BB";
+					}
+				}
+			},
+			{
+				key: ">",
+				preventDefault: true,
+				action: function(){
+					return "\u203A";
+				}
+			},
+			{
+				key: "<",
+				preventDefault: true,
+				backtracking: 2,
+				action: function(context){
+					const previous = context.previous;
+					if (previous && (previous.endsWith("\u2039") || previous.endsWith("<"))){
+						return "\u00AB";
+					}
+				}
+			},
+			{
+				key: "<",
+				preventDefault: true,
+				action: function(){
+					return "\u2039";
+				}
+			},
 		]
 	};
 }();
