@@ -27,6 +27,10 @@
 		"message": "German",
 		"description": "Name of the German quote rule"
 	},
+	"quoteRuleFR": {
+		"message": "French",
+		"description": "Name of the French quote rule"
+	},
 	"sampleMessage": {
 		"message": "",
 		"description": ""

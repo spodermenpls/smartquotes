@@ -133,13 +133,19 @@ async function main(){
 					return getLineAfterSelection();
 				}
 			};
-			quoteRule.filter(rule => event.key === rule.key).forEach(function(rule){
+			quoteRule.filter(rule => event.key === rule.key).some(function(rule){
 				const action = rule.action(context);
 				if (action){
 					if (rule.preventDefault){
 						event.preventDefault();
+						document.execCommand("insertText", false, event.key);
+						const selection = document.getSelection();
+						for (let backtracking = rule.backtracking || 1; backtracking; backtracking -= 1){
+							selection.modify("extend", "backward", "character");
+						}
 					}
 					document.execCommand("insertText", false, action);
+					return true;
 				}
 			});
 		}
@@ -195,14 +201,23 @@ async function main(){
 			context.next = context.next.substr(keyIndex + key.length);
 			
 			let inserted = key;
-			quoteRule.filter(rule => key === rule.key).forEach(function(rule){
+			quoteRule.filter(rule => key === rule.key).some(function(rule){
 				const action = rule.action(context);
 				if (action){
 					if (rule.preventDefault){
 						inserted = "";
 					}
+					const backtracking = rule.backtracking || 1;
+					if (backtracking > 1){
+						selection.collapseToEnd();
+						for (let backtrackingI = backtracking; backtrackingI; backtrackingI -= 1){
+							selection.modify("extend", "backward", "character");
+						}
+						context.previous = context.previous.substr(0, context.previous - (backtracking - 1));
+					}
 					document.execCommand("insertText", false, action);
 					inserted += action;
+					return true;
 				}
 			});
 			
