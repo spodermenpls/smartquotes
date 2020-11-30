@@ -1,31 +1,35 @@
 {
 	"quoteRule": {
-		"message": "en",
+		"message": "ro",
 		"description": "the quoting rule to use"
 	},
 	"addonDescription": {
-		"message": "Typing converter for international quotation marks",
+		"message": "Convertor de tastare pentru ghilimele internaționale",
 		"description": "Description of the addon"
 	},
 	"applyToSelection": {
-		"message": "Apply to selection",
+		"message": "Aplică selecției",
 		"description": "Used in the popup for the description of the \"apply to selection\" button"
 	},
 	"smartQuoteActive": {
-		"message": "Smart Quote active",
+		"message": "Smart Quote activă",
 		"description": "Used in the popup for the description of the \"Smart Quote active\" checkbox"
 	},
 	"usedQuoteRule": {
-		"message": "Used citation rule",
+		"message": "Regulă de citare utilizată",
 		"description": "Used in the popup for the description of the quote rule select"
 	},
 	"quoteRuleEN": {
-		"message": "English",
+		"message": "Engleză",
 		"description": "Name of the English quote rule"
 	},
 	"quoteRuleDE": {
-		"message": "German",
+		"message": "Germană",
 		"description": "Name of the German quote rule"
+	},
+	"quoteRuleFR": {
+		"message": "Franceză",
+		"description": "Name of the French quote rule"
 	},
 	"sampleMessage": {
 		"message": "",
