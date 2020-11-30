@@ -1,14 +1,14 @@
 {
 	"quoteRule": {
-		"message": "en",
+		"message": "fr",
 		"description": "the quoting rule to use"
 	},
 	"addonDescription": {
-		"message": "Typing converter for international quotation marks",
+		"message": "Convertisseur dactylographique pour guillemets internationaux",
 		"description": "Description of the addon"
 	},
 	"applyToSelection": {
-		"message": "Apply to selection",
+		"message": "Appliquer à la sélection",
 		"description": "Used in the popup for the description of the \"apply to selection\" button"
 	},
 	"smartQuoteActive": {
@@ -16,16 +16,20 @@
 		"description": "Used in the popup for the description of the \"Smart Quote active\" checkbox"
 	},
 	"usedQuoteRule": {
-		"message": "Used citation rule",
+		"message": "Règle de citation utilisée",
 		"description": "Used in the popup for the description of the quote rule select"
 	},
 	"quoteRuleEN": {
-		"message": "English",
+		"message": "Anglais",
 		"description": "Name of the English quote rule"
 	},
 	"quoteRuleDE": {
-		"message": "German",
+		"message": "Allemand",
 		"description": "Name of the German quote rule"
+	},
+	"quoteRuleFR": {
+		"message": "Français",
+		"description": "Name of the French quote rule"
 	},
 	"sampleMessage": {
 		"message": "",
