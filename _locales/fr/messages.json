@@ -1,34 +1,34 @@
 {
 	"quoteRule": {
-		"message": "de",
+		"message": "fr",
 		"description": "the quoting rule to use"
 	},
 	"addonDescription": {
-		"message": "Eingabe-Konverter für internationale Zitatzeichen",
+		"message": "Convertisseur dactylographique pour guillemets internationaux",
 		"description": "Description of the addon"
 	},
 	"applyToSelection": {
-		"message": "Auf Auswahl anwenden",
+		"message": "Appliquer à la sélection",
 		"description": "Used in the popup for the description of the \"apply to selection\" button"
 	},
 	"smartQuoteActive": {
-		"message": "Smart Quote aktiv",
+		"message": "Smart Quote active",
 		"description": "Used in the popup for the description of the \"Smart Quote active\" checkbox"
 	},
 	"usedQuoteRule": {
-		"message": "Benutzte Anführungsstrichregel",
+		"message": "Règle de citation utilisée",
 		"description": "Used in the popup for the description of the quote rule select"
 	},
 	"quoteRuleEN": {
-		"message": "Englisch",
+		"message": "Anglais",
 		"description": "Name of the English quote rule"
 	},
 	"quoteRuleDE": {
-		"message": "Deutsch",
+		"message": "Allemand",
 		"description": "Name of the German quote rule"
 	},
 	"quoteRuleFR": {
-		"message": "Französisch",
+		"message": "Français",
 		"description": "Name of the French quote rule"
 	},
 	"sampleMessage": {
