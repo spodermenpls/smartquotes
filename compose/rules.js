@@ -1,7 +1,7 @@
 const quoteRules = function(){
 	"use strict";
-	const noWordEndRegExp = /[\B\s]$/;
-	const noWordStartRegExp = /^[\B\s]/;
+	const noWordEndRegExp = /[\B\s.,;:!?#+*~/(){}\[\]'"´`]$/;
+	const noWordStartRegExp = /^[\B\s.,;:!?#+*~/(){}\[\]'"´`]/;
 	return {
 		get: function(quoteRule){
 			return this[quoteRule];
@@ -31,6 +31,9 @@ const quoteRules = function(){
 					}
 					const next = context.next;
 					if (!next || next.match(noWordStartRegExp)){
+						return "\u2019";
+					}
+					if (previous && next && !previous.match(noWordEndRegExp) && !next.match(noWordStartRegExp)){
 						return "\u2019";
 					}
 				}
