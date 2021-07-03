@@ -3,7 +3,7 @@
 	"default_locale": "en",
 	"name": "Smart Quotes",
 	"description": "__MSG_addonDescription__",
-	"version": "0.1",
+	"version": "0.2.1",
 	"applications": {
 		"gecko": {
 			"id": "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
@@ -20,13 +20,13 @@
 			"suggested_key": {
 				"default": "Alt+Q"
 			},
-			"description": "Open the SmartQuote Popup."
+			"description": "Open the Smart Quote Popup."
 		},
 		"toggle_smart_quote": {
 			"suggested_key": {
 				"default": "Alt+Ctrl+Q"
 			},
-			"description": "Toggles smart quotes."
+			"description": "Toggles Smart Quotes."
 		}
 	},
 	"background": {
