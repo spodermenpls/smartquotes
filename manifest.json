@@ -24,7 +24,7 @@
 		},
 		"toggle_smart_quote": {
 			"suggested_key": {
-				"default": "Alt+Ctrl+Q"
+				"default": "Alt+T"
 			},
 			"description": "Toggles Smart Quotes."
 		}
