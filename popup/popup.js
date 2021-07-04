@@ -1,6 +1,14 @@
 async function main(){
 	"use strict";
 	
+	// keyboard shortcuts
+	const shortcuts = {};
+	document.addEventListener("keypress", function(event){
+		if (shortcuts[event.key]){
+			shortcuts[event.key](event);
+		}
+	});
+	
 	// Translate all necessary nodes
 	document.querySelectorAll(".translate").forEach(function(node){
 		node.textContent = messenger.i18n.getMessage(node.textContent) || node.textContent;
@@ -40,6 +48,9 @@ async function main(){
 	applyToSelectionButton.addEventListener("click", function(){
 		sendToTab({command: "applyToSelection"});
 	});
+	shortcuts.a = function(){
+		applyToSelectionButton.click();
+	}
 	
 	// SmartQuote active checkbox
 	const smartQuoteActiveCheckbox = document.getElementById("smartQuoteActive");
@@ -54,6 +65,11 @@ async function main(){
 		smartQuoteActiveCheckbox.checked = tabAnswer.smartQuoteActive;
 		smartQuoteActiveCheckbox.disabled = false;
 	});
+	shortcuts.t = function(event){
+		smartQuoteActiveCheckbox.checked = !smartQuoteActiveCheckbox.checked;
+		smartQuoteActiveCheckbox.dispatchEvent(new Event("change"));
+	}
+	
 	
 	// quote rule select
 	const quoteRuleSelect = document.getElementById("quoteRule");
@@ -68,6 +84,13 @@ async function main(){
 		quoteRuleSelect.value = tabAnswer.usedQuoteRule;
 		quoteRuleSelect.disabled = false;
 	});
+	Array.from(quoteRuleSelect.options).forEach(function(option, i){
+		shortcuts[i + 1] = function(){
+			quoteRuleSelect.selectedIndex = i;
+			quoteRuleSelect.dispatchEvent(new Event("change"));
+		};
+	});
+	
 }
 
 main();
