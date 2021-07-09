@@ -123,7 +123,7 @@ async function main(){
 	}
 	
 	const body = window.document.querySelector("html");
-	body.addEventListener("keydown", function(event){
+	body.addEventListener("keypress", function(event){
 		if (smartQuoteActive && !event.ctrlKey){
 			const context = {
 				get previous(){
